@@ -1,0 +1,14 @@
+✖ BUG01: atualizar contato que não existe mais não informa sucesso falso (0.2446ms)
+✖ BUG01: atualizar contato existente altera só os campos enviados (0.13ms)
+✖ BUG02: pesquisa por telefone no formato exibido na tela encontra o contato (0.7724ms)
+✖ BUG03: rejeita e-mail com pontos seguidos ou ponto nas pontas (0.2261ms)
+✖ BUG04: rejeita nome sem letras (0.1712ms)
+ℹ tests 22
+ℹ pass 17
+ℹ fail 5
+✖ failing tests:
+✖ BUG01: atualizar contato que não existe mais não informa sucesso falso (0.2446ms)
+✖ BUG01: atualizar contato existente altera só os campos enviados (0.13ms)
+✖ BUG02: pesquisa por telefone no formato exibido na tela encontra o contato (0.7724ms)
+✖ BUG03: rejeita e-mail com pontos seguidos ou ponto nas pontas (0.2261ms)
+✖ BUG04: rejeita nome sem letras (0.1712ms)

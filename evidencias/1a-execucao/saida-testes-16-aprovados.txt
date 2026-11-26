@@ -1,0 +1,19 @@
+✔ aceita nome válido (1.0815ms)
+✔ rejeita nome vazio ou só com espaços (0.1263ms)
+✔ rejeita nome com menos de 2 letras (0.1115ms)
+✔ aceita e-mail em formato válido (2.3393ms)
+✔ rejeita e-mail sem @, sem domínio ou com espaço (0.1689ms)
+✔ normaliza e-mail para minúsculas e sem espaços nas pontas (0.1404ms)
+✔ normaliza telefone mantendo apenas dígitos (0.1784ms)
+✔ aceita celular (11 dígitos) e fixo (10 dígitos) com DDD (0.2233ms)
+✔ rejeita telefone vazio, curto, com letras ou DDD inválido (0.1516ms)
+✔ rejeita celular de 11 dígitos que não começa com 9 após o DDD (0.199ms)
+✔ contato válido não gera erros (3.1416ms)
+✔ rejeita ausência de campos obrigatórios (0.1238ms)
+✔ detecta e-mail duplicado mesmo com diferença de maiúsculas (0.2206ms)
+✔ permite manter o próprio e-mail durante a edição (0.1155ms)
+✔ pesquisa encontra por nome sem diferenciar maiúsculas (0.1632ms)
+✔ pesquisa com texto vazio retorna todos os contatos (0.1415ms)
+ℹ tests 16
+ℹ pass 16
+ℹ fail 0

@@ -1,0 +1,4 @@
+✖ BUG05: mensagem de nome sem letras explica o problema correto (15.9509ms)
+ℹ tests 23
+ℹ pass 22
+ℹ fail 1

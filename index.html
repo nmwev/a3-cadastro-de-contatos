@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Agenda de Contatos - Grupo 6</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Minha Agenda de Contatos</h1>
+      <p class="subtitle">Guarde nome, e-mail e telefone das pessoas em um só lugar.</p>
+      <p class="group">Grupo 6 - A3 de Garantia da Qualidade de Software</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <h2 id="form-title">Novo contato</h2>
+          <p>Preencha nome, e-mail e telefone (todos obrigatórios).</p>
+        </div>
+      </div>
+
+      <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+
+      <form id="contact-form" novalidate>
+        <input type="hidden" id="contact-id">
+        <div class="form-grid">
+          <label>Nome completo *
+            <input id="name" name="name" maxlength="80" placeholder="Ex.: Maria Silva" required>
+          </label>
+          <label>E-mail *
+            <input id="email" name="email" type="email" maxlength="100" placeholder="exemplo@email.com" required>
+          </label>
+          <label>Telefone com DDD *
+            <input id="phone" name="phone" type="tel" maxlength="20" placeholder="(21) 98765-4321" required>
+            <small>Fixo com 10 dígitos ou celular com 11.</small>
+          </label>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn primary" id="save-button">Adicionar à agenda</button>
+          <button type="button" class="btn secondary" id="cancel-edit" hidden>Desistir da edição</button>
+          <button type="reset" class="btn ghost" id="clear-form">Limpar campos</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading list-heading">
+        <div>
+          <h2>Meus contatos</h2>
+          <p><span id="contact-count">0</span> na agenda</p>
+        </div>
+        <input id="search" class="search" type="search" placeholder="Procurar contato" title="Procure por nome, e-mail ou telefone" aria-label="Procurar contatos">
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Nome</th><th>E-mail</th><th>Telefone</th><th>Opções</th></tr>
+          </thead>
+          <tbody id="contact-list">
+            <tr><td colspan="4" class="empty">Sua agenda ainda está vazia.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <p class="disclaimer">Trabalho acadêmico do Grupo 6. Os contatos ficam salvos só neste navegador (LocalStorage). Use apenas dados fictícios.</p>
+  </main>
+
+  <script src="validation.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

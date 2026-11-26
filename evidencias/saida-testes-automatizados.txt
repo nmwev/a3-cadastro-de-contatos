@@ -1,0 +1,38 @@
+✔ aceita nome válido (2.1979ms)
+✔ rejeita nome vazio ou só com espaços (0.1285ms)
+✔ rejeita nome com menos de 2 caracteres (0.1519ms)
+✔ aceita e-mail em formato válido (0.2842ms)
+✔ rejeita e-mail sem @, sem domínio ou com espaço (0.1485ms)
+✔ normaliza e-mail para minúsculas e sem espaços nas pontas (0.1281ms)
+✔ normaliza telefone mantendo apenas dígitos (0.1558ms)
+✔ aceita celular (11 dígitos) e fixo (10 dígitos) com DDD (0.2251ms)
+✔ rejeita telefone vazio, curto, com letras ou DDD inválido (0.1541ms)
+✔ rejeita celular de 11 dígitos que não começa com 9 após o DDD (0.1978ms)
+✔ rejeita telefone com letra mesmo tendo a quantidade certa de dígitos (0.1693ms)
+✔ rejeita DDD com segundo dígito 0 (0.0985ms)
+✔ rejeita telefone com 12 dígitos (0.0891ms)
+✔ contato válido não gera erros (0.7906ms)
+✔ rejeita ausência de campos obrigatórios (0.083ms)
+✔ detecta e-mail duplicado mesmo com diferença de maiúsculas (0.1783ms)
+✔ permite manter o próprio e-mail durante a edição (0.1163ms)
+✔ pesquisa encontra por nome sem diferenciar maiúsculas (0.1768ms)
+✔ pesquisa encontra por e-mail (0.881ms)
+✔ pesquisa com texto vazio retorna todos os contatos (0.8112ms)
+✔ BUG01: atualizar contato que não existe mais não informa sucesso falso (0.151ms)
+✔ BUG01: atualizar contato existente altera só os campos enviados (0.1068ms)
+✔ BUG02: pesquisa por telefone no formato exibido na tela encontra o contato (0.0902ms)
+✔ BUG02: pesquisa por texto sem dígitos não encontra contato pelo telefone (0.0746ms)
+✔ BUG03: rejeita e-mail com pontos seguidos ou ponto nas pontas (0.0967ms)
+✔ BUG04: rejeita nome sem letras (0.0745ms)
+✔ BUG05: mensagem de nome sem letras explica o problema correto (0.1027ms)
+✔ BUG06: pesquisa com letras e números não traz contatos pelo telefone (0.0882ms)
+✔ BUG07: rejeita celular incompleto (10 dígitos começando com 9) (0.108ms)
+✔ BUG07: fixo precisa começar com 2, 3, 4 ou 5 depois do DDD (0.0698ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 101.3082

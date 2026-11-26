@@ -1,0 +1,128 @@
+✔ aceita nome válido (2.2155ms)
+✔ rejeita nome vazio ou só com espaços (0.1323ms)
+✔ rejeita nome com menos de 2 caracteres (0.1444ms)
+✔ aceita e-mail em formato válido (0.3008ms)
+✔ rejeita e-mail sem @, sem domínio ou com espaço (0.1513ms)
+✔ normaliza e-mail para minúsculas e sem espaços nas pontas (0.1257ms)
+✔ normaliza telefone mantendo apenas dígitos (0.1516ms)
+✔ aceita celular (11 dígitos) e fixo (10 dígitos) com DDD (0.219ms)
+✔ rejeita telefone vazio, curto, com letras ou DDD inválido (0.1458ms)
+✔ rejeita celular de 11 dígitos que não começa com 9 após o DDD (0.1972ms)
+✔ rejeita telefone com letra mesmo tendo a quantidade certa de dígitos (0.1309ms)
+✔ rejeita DDD com segundo dígito 0 (0.2295ms)
+✔ rejeita telefone com 12 dígitos (0.0892ms)
+✔ contato válido não gera erros (0.7948ms)
+✔ rejeita ausência de campos obrigatórios (0.0851ms)
+✔ detecta e-mail duplicado mesmo com diferença de maiúsculas (0.1786ms)
+✔ permite manter o próprio e-mail durante a edição (0.1133ms)
+✔ pesquisa encontra por nome sem diferenciar maiúsculas (0.1681ms)
+✖ pesquisa encontra por e-mail (1.1712ms)
+✔ pesquisa com texto vazio retorna todos os contatos (0.8018ms)
+✔ BUG01: atualizar contato que não existe mais não informa sucesso falso (0.1552ms)
+✔ BUG01: atualizar contato existente altera só os campos enviados (0.108ms)
+✔ BUG02: pesquisa por telefone no formato exibido na tela encontra o contato (0.0888ms)
+✔ BUG02: pesquisa por texto sem dígitos não encontra contato pelo telefone (0.0719ms)
+✔ BUG03: rejeita e-mail com pontos seguidos ou ponto nas pontas (0.0987ms)
+✔ BUG04: rejeita nome sem letras (0.0742ms)
+✔ BUG05: mensagem de nome sem letras explica o problema correto (0.0944ms)
+✖ BUG06: pesquisa com letras e números não traz contatos pelo telefone (0.2556ms)
+✖ BUG07: rejeita celular incompleto (10 dígitos começando com 9) (0.1666ms)
+✖ BUG07: fixo precisa começar com 2, 3, 4 ou 5 depois do DDD (0.145ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 26
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 101.9832
+
+✖ failing tests:
+
+test at tests\validation.test.js:113:1
+✖ pesquisa encontra por e-mail (1.1712ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      '1',
+  +   '2'
+    ]
+  
+      at TestContext.<anonymous> (D:\Claude\A3\meu-projeto\tests\validation.test.js:119:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ '1', '2' ],
+    expected: [ '1' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\validation.test.js:172:1
+✖ BUG06: pesquisa com letras e números não traz contatos pelo telefone (0.2556ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 0
+  
+      at TestContext.<anonymous> (D:\Claude\A3\meu-projeto\tests\validation.test.js:177:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\validation.test.js:181:1
+✖ BUG07: rejeita celular incompleto (10 dígitos começando com 9) (0.1666ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (D:\Claude\A3\meu-projeto\tests\validation.test.js:182:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\validation.test.js:186:1
+✖ BUG07: fixo precisa começar com 2, 3, 4 ou 5 depois do DDD (0.145ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (D:\Claude\A3\meu-projeto\tests\validation.test.js:189:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

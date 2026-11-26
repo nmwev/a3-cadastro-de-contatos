@@ -1,0 +1,23 @@
+Navegador: Edg/158.0.4370.33 | Data: 25/11/2026, 14:44:30 | index.html aberto direto do disco
+CT01 APROVADO | mensagem: "Contato adicionado à agenda." | listagem: Maria Silva | maria@email.com | (21) 98765-4321
+CT02 APROVADO | mensagem: "Informe o nome. Informe o e-mail. Informe o telefone." | listagem: Maria Silva | maria@email.com | (21) 98765-4321
+CT03 APROVADO | mensagem: "Informe um e-mail válido, por exemplo nome@email.com." | listagem: Maria Silva | maria@email.com | (21) 98765-4321
+CT04 APROVADO | mensagem: "Informe um telefone válido com DDD, por exemplo (21) 98765-4321." | listagem: Maria Silva | maria@email.com | (21) 98765-4321
+CT05 APROVADO | mensagem: "Já existe um contato cadastrado com este e-mail." | listagem: Maria Silva | maria@email.com | (21) 98765-4321
+CT17 APROVADO | mensagem: "Contato adicionado à agenda." | listagem: Maria Silva | maria@email.com | (21) 98765-4321 ; João Souza | joao@email.com | (21) 3333-4444
+CT06 APROVADO | mensagem: "Contato adicionado à agenda." | listagem: João Souza | joao@email.com | (21) 3333-4444
+CT16 APROVADO | mensagem: "Contato adicionado à agenda." | listagem: Ana Costa | ana@email.com | (11) 98765-1234
+CT07 APROVADO | mensagem: "Alterações gravadas." | listagem: Maria Silva | maria@email.com | (21) 99999-0000 ; João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234
+CT08 APROVADO | mensagem: "Alterações gravadas." | listagem: Maria Silva | maria@email.com | (21) 99999-0000 ; João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234 | janela: "Remover Ana Costa da agenda?" -> Cancelar
+CT09 APROVADO | mensagem: "Contato removido da agenda." | listagem: Maria Silva | maria@email.com | (21) 99999-0000 ; João Souza | joao@email.com | (21) 3333-4444 | janela: "Remover Ana Costa da agenda?" -> OK
+CT10 APROVADO | mensagem: "" | listagem: Maria Silva | maria@email.com | (21) 99999-0000 ; João Souza | joao@email.com | (21) 3333-4444
+CT11 APROVADO | mensagem: "Contato removido da agenda." | listagem: João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234 | formulário: Novo contato / Adicionar à agenda
+CT12 APROVADO | mensagem: "Contato removido da agenda." | listagem: Ana Costa | ana@email.com | (11) 98765-1234
+CT13 APROVADO | mensagem: "Informe um e-mail válido, por exemplo nome@email.com." | listagem: João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234
+CT14 APROVADO | mensagem: "O nome deve ter pelo menos 2 caracteres e conter letras." | listagem: João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234
+CT18 (carlos2) APROVADO | mensagem: "" | listagem: Nenhum contato encontrado com esse texto.
+CT18 (maria1@email.com) APROVADO | mensagem: "" | listagem: Nenhum contato encontrado com esse texto.
+CT19 (incompleto) APROVADO | mensagem: "Informe um telefone válido com DDD, por exemplo (21) 98765-4321." | listagem: João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234
+CT19 (completo) APROVADO | mensagem: "Contato adicionado à agenda." | listagem: João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234 ; Pedro Lima | pedro@email.com | (21) 98765-4321 | salvo: Pedro Lima (21) 9 8765-4321
+CT15 (estado final) APROVADO | mensagem: "" | listagem: João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234 ; Pedro Lima | pedro@email.com | (21) 98765-4321
+Erros de JavaScript na página: 0

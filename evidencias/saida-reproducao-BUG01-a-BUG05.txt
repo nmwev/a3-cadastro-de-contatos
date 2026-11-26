@@ -1,0 +1,11 @@
+Navegador: Edg/158.0.4370.33 | Data: 25/11/2026, 14:43:37 | index.html aberto direto do disco
+BUG01 (após remover, formulário segue em edição) REPROVADO | mensagem: "Contato removido da agenda." | listagem: João Souza | joao@email.com | (21) 3333-4444 | formulário: Alterando contato / Gravar alterações / nome: Maria Silva
+BUG01 (gravar contato removido) REPROVADO | mensagem: "Alterações gravadas." | listagem: João Souza | joao@email.com | (21) 3333-4444 | salvos: João Souza (21) 3333-4444
+BUG02 REPROVADO | mensagem: "Contato adicionado à agenda." | listagem: Nenhum contato encontrado com esse texto.
+BUG03 REPROVADO | mensagem: "Contato adicionado à agenda." | listagem: João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234 ; Teste | teste@email..com | (21) 97777-6666
+BUG04 REPROVADO | mensagem: "Contato adicionado à agenda." | listagem: João Souza | joao@email.com | (21) 3333-4444 ; Ana Costa | ana@email.com | (11) 98765-1234 ; Teste | teste@email..com | (21) 97777-6666 ; @@ | teste@email.com | (21) 97777-6666
+Erros de JavaScript na página: 0
+
+Navegador: Edg/158.0.4370.33 | Data: 25/11/2026, 14:43:43 | index.html aberto direto do disco
+BUG05 REPROVADO | mensagem: "O nome deve ter pelo menos 2 caracteres." | listagem: Ana Costa | ana@email.com | (11) 98765-1234
+Erros de JavaScript na página: 0

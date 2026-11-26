@@ -1,0 +1,74 @@
+/* Estilos do Sistema de Cadastro de Contatos (Grupo 6). */
+:root {
+  --main: #2e5e4e;
+  --main-dark: #234a3d;
+  --main-soft: #e8efeb;
+  --bg: #f4f5f3;
+  --card: #ffffff;
+  --line: #d9ddd8;
+  --text: #2b2f2c;
+  --muted: #6a716b;
+  --ok: #1f6b45;
+  --ok-bg: #e9f4ee;
+  --err: #a8321f;
+  --err-bg: #fbeeec;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Arial, Helvetica, sans-serif; }
+.container { width: min(1000px, calc(100% - 32px)); margin: 0 auto; }
+
+/* Cabeçalho */
+.topbar { background: var(--main); color: #fff; padding: 24px 0; }
+h1 { margin: 0; font-size: clamp(24px, 4vw, 30px); }
+.subtitle { margin: 6px 0 0; color: #d6e4dd; font-size: 14px; }
+.group { margin: 10px 0 0; color: #b9cfc4; font-size: 12px; }
+
+/* Blocos */
+main { padding: 24px 0 40px; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 22px; margin-bottom: 20px; }
+.section-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 18px; }
+h2 { margin: 0 0 4px; color: var(--main-dark); font-size: 19px; }
+.section-heading p { margin: 0; color: var(--muted); font-size: 13px; }
+
+/* Formulário */
+.form-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: bold; color: var(--text); }
+input { width: 100%; border: 1px solid #c4cac5; border-radius: 4px; padding: 9px 10px; font: inherit; font-size: 14px; font-weight: normal; color: var(--text); background: #fff; min-height: 38px; }
+input:focus { outline: 2px solid #b7d1c4; border-color: var(--main); }
+label small { font-size: 11px; font-weight: normal; color: var(--muted); }
+.actions { display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap; }
+.btn { border: 1px solid transparent; border-radius: 4px; padding: 9px 16px; font: inherit; font-size: 14px; font-weight: bold; cursor: pointer; }
+.primary { background: var(--main); color: #fff; }
+.primary:hover { background: var(--main-dark); }
+.secondary { background: var(--main-soft); color: var(--main-dark); }
+.ghost { background: #fff; color: var(--muted); border-color: var(--line); }
+.btn:focus-visible, .action-btn:focus-visible { outline: 2px solid var(--main); outline-offset: 2px; }
+
+/* Mensagens */
+.feedback { display: none; margin: 0 0 14px; border-radius: 4px; padding: 10px 12px; font-size: 14px; }
+.feedback.success { display: block; background: var(--ok-bg); color: var(--ok); border: 1px solid #c3e0cf; }
+.feedback.error { display: block; background: var(--err-bg); color: var(--err); border: 1px solid #efcbc4; }
+
+/* Lista */
+.list-heading { align-items: center; }
+.search { max-width: 300px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 11px 10px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { color: var(--main-dark); font-size: 13px; background: var(--main-soft); border-bottom: 2px solid #c9d8cf; }
+.empty { text-align: center; color: var(--muted); padding: 26px; }
+.row-actions { display: flex; gap: 6px; }
+.action-btn { border: 1px solid var(--line); background: #fff; color: var(--main); border-radius: 4px; padding: 5px 10px; cursor: pointer; font: inherit; font-size: 12px; }
+.action-btn:hover { background: var(--main-soft); }
+.action-btn.delete { color: var(--err); }
+.action-btn.delete:hover { background: var(--err-bg); }
+.disclaimer { color: var(--muted); font-size: 12px; text-align: center; }
+[hidden] { display: none !important; }
+
+@media (max-width: 800px) { .form-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .section-heading, .list-heading { flex-direction: column; }
+  .search { max-width: none; }
+  .panel { padding: 16px; }
+}
